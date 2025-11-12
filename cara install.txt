@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+streamlit run app.py
+python -m streamlit run app.py
+
+Sebuah tab browser baru akan otomatis terbuka di http://localhost:8501, dan aplikasi Anda akan berjalan.

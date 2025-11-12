@@ -1,0 +1,11 @@
+streamlit
+pandas
+torch
+transformers
+bertopic
+scikit-learn
+openpyxl
+sastrawi
+nltk
+seaborn
+matplotlib
