@@ -157,21 +157,17 @@ def main():
         st.write("")
         st.write("")
         
-        # 3. Logo Sponsor (IPOL & FISIP)
+       # 3. Logo Sponsor (IPOL & FISIP)
         st.markdown("---")
-        col_logo1, col_logo2 = st.columns(2)
         
-        with col_logo1:
-            # GANTI URL INI dengan nama file lokal Anda: "logo_ipol.png"
-            #st.image("https://via.placeholder.com/150x150/FF0000/FFFFFF?text=IPOL", use_container_width=True)
-            st.image("logo_ipol.png", use_container_width=True)
-            
-        with col_logo2:
-            # GANTI URL INI dengan nama file lokal Anda: "logo_fisip.png"
-            #st.image("https://via.placeholder.com/150x150/FFFFFF/000000?text=FISIP", use_container_width=True)
-            st.image("logo_fisip.png", use_container_width=True)
-
-    # --- MAIN CONTENT ---
+        # Hapus st.columns agar gambar tersusun vertikal (atas-bawah)
+        # Menambahkan caption kosong atau spasi jika perlu
+        
+        st.image("logo_ipol.png", use_container_width=True)
+        # Tambahkan sedikit jarak antar logo jika mau (opsional)
+        st.write("") 
+        st.image("logo_fisip.png", use_container_width=True)
+        # --- MAIN CONTENT ---
     
     # 1. HEADER (Logo PoliSense + Judul)
     col_header_logo, col_header_text = st.columns([1, 4])
@@ -183,7 +179,7 @@ def main():
 
     with col_header_text:
         st.title("Aplikasi Analisis Topik dan Sentimen Politik")
-        st.markdown("### **PoliSense**")
+        #st.markdown("### **PoliSense**")
 
     # 2. DESKRIPSI
     st.markdown("""
